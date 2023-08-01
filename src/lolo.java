@@ -72,7 +72,7 @@ public class lolo extends JDialog {
     public  Kullanıcılar user;
     private Kullanıcılar addUserToDatabe(String name, String email, String phone,String address, String password){
         Kullanıcılar kullanıcılar   = null;
-
+//////////////////////////////////
         return kullanıcılar;
     }
 
