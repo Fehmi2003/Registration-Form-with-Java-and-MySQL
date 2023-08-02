@@ -2,6 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
 
 public class lolo extends JDialog {
     private JTextField tfName;
@@ -10,19 +14,20 @@ public class lolo extends JDialog {
     private JTextField tfSube;
     private JPasswordField tfSifre;
     private JPasswordField tfSifre2;
-    private JButton btnKayıt;
+    private JButton btnKayit;
     private JButton btnIptal;
-    private JPanel kayıtSayfası;
+    private JPanel kayitSayfasi;
 
     public lolo(JFrame parent) {
         super(parent);
         setTitle("Yeni hesap oluştur");
-        setContentPane(kayıtSayfası);
+        setContentPane(kayitSayfasi);
         setMinimumSize(new Dimension(450,474));
         setModal(true);
         setLocationRelativeTo(parent);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
-        btnKayıt.addActionListener(new ActionListener() {
+        btnKayit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 registerUser();
@@ -54,8 +59,8 @@ public class lolo extends JDialog {
         }
         if (!password.equals(confirmPassword)) {
             JOptionPane.showMessageDialog(this,
-                    "Confirm Password does not match",
-                    "Try again",
+                    "Şifreler birbirleriyle eşleşmedi ! ",
+                    "Tekrar Deneyiniz",
                     JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -69,15 +74,22 @@ public class lolo extends JDialog {
                 "Tekrar Deneyiniz.",JOptionPane.ERROR_MESSAGE);
     }
     }
-    public  Kullanıcılar user;
-    private Kullanıcılar addUserToDatabe(String name, String email, String phone,String address, String password){
-        Kullanıcılar kullanıcılar   = null;
-//////////////////////////////////
-        return kullanıcılar;
+    public  User user;
+    private User addUserToDatabe(String name, String email, String phone,String address, String password){
+        User user   = null;
+
+        return user;
     }
 
 
     public static void main(String []args){
         lolo myForm= new lolo(null);
+            User user =myForm.user;
+            if (user!=null){
+                System.out.println("Giriş Başarılı. Hoşgeldiniz "+user.name);
+            }
+            else{
+                System.out.println("Giriş İptal Edildi.");
+            }
     }
 }
