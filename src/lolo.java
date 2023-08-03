@@ -80,8 +80,8 @@ public class lolo extends JDialog {
         final String DB_URL="jdbc:mysql://localhost/javaform?serverTimezone=UTC";
         final String USERNAME="root";
         final String PASSWORD="";
-        return user;
-    }
+
+
       try{
         Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
         // Connected to database successfully...
@@ -109,7 +109,9 @@ public class lolo extends JDialog {
 
         stmt.close();
         conn.close();
-    }catch(Exception e){
+    }
+      catch(Exception e)
+    {
         e.printStackTrace();
     }
 
