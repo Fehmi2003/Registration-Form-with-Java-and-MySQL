@@ -21,6 +21,7 @@ public class lolo extends JDialog {
     public lolo(JFrame parent) {
         super(parent);
         setTitle("Yeni hesap oluştur");
+
         setContentPane(kayitSayfasi);
         setMinimumSize(new Dimension(450,474));
         setModal(true);
@@ -77,7 +78,7 @@ public class lolo extends JDialog {
     public  User user;
     private User addUserToDatabe(String name, String email, String phone,String address, String password){
         User user   = null;
-        final String DB_URL="jdbc:mysql://localhost/javaform?serverTimezone=UTC";
+        final String DB_URL="jdbc:mysql://localhost:3306/jdbdemo.register:";
         final String USERNAME="root";
         final String PASSWORD="";
 
