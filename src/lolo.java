@@ -77,9 +77,44 @@ public class lolo extends JDialog {
     public  User user;
     private User addUserToDatabe(String name, String email, String phone,String address, String password){
         User user   = null;
-
+        final String DB_URL="jdbc:mysql://localhost/javaform?serverTimezone=UTC";
+        final String USERNAME="root";
+        final String PASSWORD="";
         return user;
     }
+      try{
+        Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+        // Connected to database successfully...
+
+        Statement stmt = conn.createStatement();
+        String sql = "INSERT INTO users (name, email, phone, address, password) " +
+                "VALUES (?, ?, ?, ?, ?)";
+        PreparedStatement preparedStatement = conn.prepareStatement(sql);
+        preparedStatement.setString(1, name);
+        preparedStatement.setString(2, email);
+        preparedStatement.setString(3, phone);
+        preparedStatement.setString(4, address);
+        preparedStatement.setString(5, password);
+
+        //Insert row into the table
+        int addedRows = preparedStatement.executeUpdate();
+        if (addedRows > 0) {
+            user = new User();
+            user.name = name;
+            user.email = email;
+            user.phone = phone;
+            user.address = address;
+            user.password = password;
+        }
+
+        stmt.close();
+        conn.close();
+    }catch(Exception e){
+        e.printStackTrace();
+    }
+
+        return user;
+}
 
 
     public static void main(String []args){
