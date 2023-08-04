@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="lolo">
-  <grid id="27dc6" binding="kayitSayfasi" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="registerPanel" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="669" height="564"/>
+      <xy x="20" y="20" width="738" height="589"/>
     </constraints>
     <properties>
       <background color="-9451"/>
@@ -11,58 +11,78 @@
     </properties>
     <border type="none"/>
     <children>
-      <component id="6db0d" class="javax.swing.JLabel">
+      <component id="86974" class="javax.swing.JLabel">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-2027"/>
           <icon value="128.png"/>
           <text value=""/>
         </properties>
       </component>
-      <component id="a548d" class="javax.swing.JLabel">
+      <component id="d20d9" class="javax.swing.JLabel">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Copperplate Gothic Bold" size="48" style="1"/>
+          <font name="DialogInput" size="26" style="1"/>
           <text value="KAYIT OLMA"/>
         </properties>
       </component>
-      <component id="f8ec8" class="javax.swing.JLabel">
+      <component id="8f6c2" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Dialog" size="14" style="1"/>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="0"/>
-          <text value="İSİM SOYİSİM"/>
+          <font name="DialogInput" size="16" style="1"/>
+          <text value="İSİM "/>
         </properties>
       </component>
-      <component id="2a3ba" class="javax.swing.JTextField" binding="tfName">
+      <component id="dccdf" class="javax.swing.JTextField" binding="tfName">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
+        <properties/>
       </component>
-      <component id="3e2a6" class="javax.swing.JLabel">
+      <component id="c5cd" class="javax.swing.JLabel">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Dialog" size="14" style="1"/>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="0"/>
-          <text value="MAİL"/>
+          <font name="DialogInput" size="16" style="1"/>
+          <text value="EMAİL"/>
         </properties>
       </component>
-      <component id="1cd5c" class="javax.swing.JTextField" binding="tfEmail">
+      <component id="15d9a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" size="16" style="1"/>
+          <text value="TELEFON"/>
+        </properties>
+      </component>
+      <component id="66815" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" size="16" style="1"/>
+          <text value="ŞUBE"/>
+        </properties>
+      </component>
+      <component id="3c31" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" size="16" style="1"/>
+          <text value="ŞİFRE"/>
+        </properties>
+      </component>
+      <component id="d7245" class="javax.swing.JTextField" binding="tfEmail">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -70,18 +90,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="14f70" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Dialog" size="14" style="1"/>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="0"/>
-          <text value="TELEFON"/>
-        </properties>
-      </component>
-      <component id="c91ae" class="javax.swing.JTextField" binding="tfPhone">
+      <component id="bbf5f" class="javax.swing.JTextField" binding="tfPhone">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -89,18 +98,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="dee27" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Dialog" size="14" style="1"/>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="0"/>
-          <text value="ŞUBE"/>
-        </properties>
-      </component>
-      <component id="beaca" class="javax.swing.JTextField" binding="tfSube">
+      <component id="42238" class="javax.swing.JTextField" binding="tfAddress">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -108,29 +106,24 @@
         </constraints>
         <properties/>
       </component>
-      <component id="44bdc" class="javax.swing.JLabel">
+      <component id="6e526" class="javax.swing.JLabel">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Dialog" size="14" style="1"/>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="0"/>
-          <text value="ŞİFRE"/>
-        </properties>
-      </component>
-      <component id="39ce9" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Dialog" size="14" style="1"/>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="0"/>
+          <font name="DialogInput" size="16" style="1"/>
           <text value="ŞİFRE TEKRAR"/>
         </properties>
       </component>
-      <component id="d2e80" class="javax.swing.JPasswordField" binding="tfSifre">
+      <component id="5a5b8" class="javax.swing.JPasswordField" binding="pfConfirmPassword">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="47d2d" class="javax.swing.JPasswordField" binding="pfPassword">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -138,41 +131,29 @@
         </constraints>
         <properties/>
       </component>
-      <component id="ebdbc" class="javax.swing.JPasswordField" binding="tfSifre2">
+      <component id="6438d" class="javax.swing.JButton" binding="btnRegister">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value=""/>
+          <font name="DialogInput" size="16" style="1"/>
+          <text value="KAYIT OL "/>
         </properties>
       </component>
-      <component id="71512" class="javax.swing.JButton" binding="btnKayit">
-        <constraints>
-          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Dialog" size="14" style="1"/>
-          <text value="KAYIT OL"/>
-        </properties>
-      </component>
-      <component id="f127e" class="javax.swing.JButton" binding="btnIptal">
+      <component id="a5e3f" class="javax.swing.JButton" binding="btnCancel">
         <constraints>
           <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="DialogInput" size="16" style="1"/>
           <text value="İPTAL ET"/>
         </properties>
       </component>
-      <component id="c7458" class="javax.swing.JLabel">
+      <vspacer id="5326d">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
+      </vspacer>
     </children>
   </grid>
 </form>
